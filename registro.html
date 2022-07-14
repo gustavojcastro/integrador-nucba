@@ -6,14 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="registro.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="https://kit.fontawesome.com/b9d79d9535.js" crossorigin="anonymous"></script>
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
-    <title>Lost and >Found</title>
+    <title>Lost and Found</title>
 </head>
 <body>
-
-    
+  <div class="container-registro">
+    <div class="registrate">
+      <div class="fondo-registro">
+        <h1>Lost and Found</h1>
+        <img src="img/logologin4.png" alt="logo">
+        <h2>Regístrate para obtener nuestras recetas</h2>
+        <form>
+            <input type="text" name="nombre" id="nombre" placeholder="     Nombre" required>
+            <input type="text" name="apellido" id="apellido" placeholder="     Apellido" required>
+            <input type="text" name="correo-cel" id="correo-cel" placeholder="    Correo electrónico" required>
+            <input type="password" name="password" id="password" placeholder="    Contraseña nueva" required>
+            Fecha de nacimiento 
+            <input type="date">
+            Preferencias 
+            <div class="preferencias">
+            <a class="btn-preferencias" href="#">Dulce</a>
+            <a class="btn-preferencias" href="#">Salado</a>
+            <a class="btn-preferencias" href="#">Ambos</a>
+            </div>
+            <input class="btn-registro" type="submit" value="Registrate">
+            <a class="house" href="./index.html"><i class="fa-solid fa-house"></i></a>
+        </form>
+        </div>
+    </div>
+</div>
 </body>
 </html>

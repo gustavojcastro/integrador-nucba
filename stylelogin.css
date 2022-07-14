@@ -44,8 +44,10 @@ body {
     text-decoration: none;
 }
 
-.container-form a:hover {
+.cont:hover {
     font-size: 20px;
+    transition: all .2s;
+    text-decoration: underline;
 
 }
 
@@ -61,6 +63,9 @@ form {
 }
 
 form input {
+    background-color: black;
+    color: rgb(216, 158, 42);
+    font-family: 'Playfair Display', serif;
     padding: 5px;
     border-radius: 5px;
     border: 2px solid black;
@@ -81,6 +86,13 @@ form input {
     color: black;
     background-color: rgb(216, 158, 42);
     border: 1px solid black;
-    font-size: 17px;
-    transition: .9s linear;
+    font-size: 20px;
+    transition: .5s linear;
+}
+
+
+@media (max-width:992px){
+    .container-form {
+        margin: 0 auto;
+    }
 }
