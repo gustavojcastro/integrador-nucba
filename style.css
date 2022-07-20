@@ -67,6 +67,27 @@ html {
 
 }
 
+.link-nav {
+    position: relative;
+}
+
+.navbar-list .link-nav::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: rgb(216, 158, 42);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.15s ease;
+}
+
+.navbar-list .link-nav:hover::after {
+    transform-origin: bottom left;
+    transform: scaleX(1);
+}
 
 .navbar-list a {
     text-decoration: none;
@@ -78,10 +99,11 @@ html {
     cursor: pointer;
     display: none;
     color: rgb(216, 158, 42);
-}
+    }
 
 #toggle-menu {
     display: none;
+
 }
 
 .btn {
@@ -94,8 +116,8 @@ html {
 .btn:hover {
     color: black;
     background-color: rgb(216, 158, 42);
-    transition: .5s linear;
-    font-size: 18px;
+    transition: .3s linear;
+    font-size: 17px;
 }
 
 @media (max-width:992px){
@@ -105,6 +127,7 @@ html {
 
     .navbar i {
         display: block;
+    
     }
 
     .navbar-list {
@@ -122,6 +145,7 @@ html {
 
     #toggle-menu:checked + .navbar-list {
         display: flex;
+        
     }
 }
 
@@ -283,7 +307,6 @@ html {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-
 } 
 
 .item-div {
@@ -302,8 +325,8 @@ html {
     width: 100%;
     cursor: pointer;
     border-radius: 1rem;
-    transition: .8s all;
     text-align: center;
+    transition: 2s ease;
 
 }
 
