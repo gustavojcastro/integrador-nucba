@@ -375,6 +375,84 @@ html {
 
 /*terminada section3*/
 
+/*empiezo section3.5*/
+
+.section-resto {
+    overflow: hidden;
+    text-align: center;
+    color: rgb(44, 43, 43);
+    border-radius: 1rem;
+    font-size: 30px;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+.titulo-resto {
+    font-size: 70px;
+    color: #FFFFFF;
+background: rgb(44, 43, 43);
+text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+}
+
+.section3-5 p {
+    color: rgb(216, 158, 42);
+}
+
+
+
+.section3-5 {
+    display: flex;
+    gap: 20px;
+    animation: slider 30s infinite alternate linear;    
+}
+
+.div-resto h2 {
+    text-shadow: 7px 2px 2px rgba(0,0,0,0.69);
+}
+
+
+.section3-5:hover {
+    animation-play-state: paused;
+}
+
+.div-resto img {
+    width: 500px;
+    height: 500px;
+    border-radius: 1rem;
+}
+
+
+.div-resto {
+    width: 100%;   
+}
+
+@keyframes slider {
+    0% {margin-left: 0;}
+    5%{margin-left: 0;}
+    10%{margin-left: -10%;}
+    15%{margin-left: -30;}
+    20% {margin-left: -40%;}
+    30% {margin-left: -60%;}
+    40% {margin-left: -80%;}
+    50% {margin-left: -100%;}
+    60%{margin-left: -120%;}
+    70%{margin-left: -140%;}
+    80%{margin-left: -160%;}
+    90%{margin-left: -180%;}
+    95%{margin-left: -185%;}
+    100%{margin-left: -190%;}
+    
+}
+
+@media (max-width:992px){
+    .section-resto {
+        margin-top: 80rem;
+    
+    }
+
+}
+
 /*empiezo section4*/
 
 .section4 {
@@ -423,7 +501,6 @@ html {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 73rem;
     }
 
     .iframe1 iframe {
